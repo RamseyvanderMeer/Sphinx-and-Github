@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>src package &mdash; Sphinx-and-Github 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Sphinx-and-Github
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">src package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#module-src">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sphinx-and-Github</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>src package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/src.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="src-package">
+<h1>src package<a class="headerlink" href="#src-package" title="Permalink to this headline"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="src.DatabaseSettings.html">src.DatabaseSettings package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="src.DatabaseSettings.html#module-src.DatabaseSettings">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="module-src">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-src" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.Spamfilter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.</span></span><span class="sig-name descname"><span class="pre">Spamfilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">training_dir</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#Spamfilter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.Spamfilter" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A naive Bayesian spam filter</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.Spamfilter.classify">
+<span class="sig-name descname"><span class="pre">classify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#Spamfilter.classify"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.Spamfilter.classify" title="Permalink to this definition"></a></dt>
+<dd><p>classifies a file as spam or ham based on training data
+:param filepath:
+:return: (boolean) True-&gt;spam, False-&gt;ham</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.Spamfilter.classify_all">
+<span class="sig-name descname"><span class="pre">classify_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">known_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'spam'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#Spamfilter.classify_all"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.Spamfilter.classify_all" title="Permalink to this definition"></a></dt>
+<dd><p>Classifies all emails in a testing directory and maintains count of errors
+:param dir_path: path of testing directory
+:param known_type: str: the known type of testing directory</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.Spamfilter.clean_table">
+<span class="sig-name descname"><span class="pre">clean_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">min_freq</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#Spamfilter.clean_table"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.Spamfilter.clean_table" title="Permalink to this definition"></a></dt>
+<dd><p>Removes entries from frequency table if they are deemed poor indicators.
+or if combined spam/ham frequency is below ‘min_freq’
+:param min_freq: if total token count below threshold, delete from table</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.Spamfilter.create_frequency_table">
+<span class="sig-name descname"><span class="pre">create_frequency_table</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#Spamfilter.create_frequency_table"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.Spamfilter.create_frequency_table" title="Permalink to this definition"></a></dt>
+<dd><p>Generates token frequency table from training emails
+:return:  dict{k,v}:  spam/ham frequencies
+k = (str)token, v = {spam_freq: , ham_freq:, prob_spam:, prob_ham:}</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.Spamfilter.print_table_info">
+<span class="sig-name descname"><span class="pre">print_table_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#Spamfilter.print_table_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.Spamfilter.print_table_info" title="Permalink to this definition"></a></dt>
+<dd><p>Print training info:
+- unique tokens in ham and spam, number of emails in training set</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.Spamfilter.prob_ham">
+<span class="sig-name descname"><span class="pre">prob_ham</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#Spamfilter.prob_ham"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.Spamfilter.prob_ham" title="Permalink to this definition"></a></dt>
+<dd><p>calculates the probability that ‘token’ is found in ham emails
+:param token: (str)
+:return: (float) probability ‘token’ is ham based on training emails</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.Spamfilter.prob_msg_ham">
+<span class="sig-name descname"><span class="pre">prob_msg_ham</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#Spamfilter.prob_msg_ham"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.Spamfilter.prob_msg_ham" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates the probability that a message is ham
+:param filepath: (str) path of email
+:return: (float) probability message is ham</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.Spamfilter.prob_msg_spam">
+<span class="sig-name descname"><span class="pre">prob_msg_spam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#Spamfilter.prob_msg_spam"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.Spamfilter.prob_msg_spam" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates the probability that a message is spam
+:param filepath: (str) path of email
+:return: (float) probability message is spam</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.Spamfilter.prob_spam">
+<span class="sig-name descname"><span class="pre">prob_spam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#Spamfilter.prob_spam"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.Spamfilter.prob_spam" title="Permalink to this definition"></a></dt>
+<dd><p>calculates the probability that ‘token’ is found in spam emails
+:param token: (str)
+:return: (float) probability ‘token’ is spam based on training emails</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.clean_split">
+<span class="sig-prename descclassname"><span class="pre">src.</span></span><span class="sig-name descname"><span class="pre">clean_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#clean_split"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.clean_split" title="Permalink to this definition"></a></dt>
+<dd><p>Removes all non-alphanum chars and splits string at whitespace, downcase
+:param in_str: (str) target string
+:return: (list) cleaned strings</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.dir_tokens">
+<span class="sig-prename descclassname"><span class="pre">src.</span></span><span class="sig-name descname"><span class="pre">dir_tokens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#dir_tokens"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.dir_tokens" title="Permalink to this definition"></a></dt>
+<dd><p>tokenizes all files contained in ‘dir_path’
+:param dir_path: directory containing files to be tokenized
+:return: list of tokens</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.file_tokens">
+<span class="sig-prename descclassname"><span class="pre">src.</span></span><span class="sig-name descname"><span class="pre">file_tokens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#file_tokens"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.file_tokens" title="Permalink to this definition"></a></dt>
+<dd><p>tokenizes all strings contained in ‘filepath’ after removing      all non-alphanum chars and splitting strings at whitespace
+:param filepath: path of target file
+:return: list of tokens</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.tokens">
+<span class="sig-prename descclassname"><span class="pre">src.</span></span><span class="sig-name descname"><span class="pre">tokens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tok_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src.html#tokens"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.tokens" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a list of all substrings contained in ‘text’ of size ‘tok_size’
+:param text: (string) text to tokenize
+:param tok_size: length of substrings
+:return: (list) tokens of ‘text’</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Ramsey van der Meer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
